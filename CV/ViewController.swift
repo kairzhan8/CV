@@ -10,10 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var logo: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
+    
+    override func viewWillLayoutSubviews() {
+        logo.layer.cornerRadius = logo.frame.width / 2
+}
 
 
 }
